@@ -11,7 +11,7 @@ import GithubIcon from "./icon/GithubIcon.vue";
       <div class="flex flex-col gap-2">
         <h2 class="text-5xl lg:text-3xl xl:text-7xl uppercase">
           hi, i am <br />
-          OKPE ONOJA
+          OKPE ONOJA GODWIN
         </h2>
         <p class="text-base lg:text-lg font-normal">
           Welcome to my corner of the web—where creativity meets code. 
