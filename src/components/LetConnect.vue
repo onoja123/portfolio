@@ -53,23 +53,23 @@ import GithubIcon from "./icon/GithubIcon.vue";
     >
       <div class="flex flex-col gap-3">
         <label class="text-[#c7c7c7] font-medium text-base" for="">Name</label>
-        <input type="text" class="bg-[#1A1A1A] rounded px-4 py-3 h-12 w-full" />
+        <input type="text" class="bg-[#1A1A1A] text-[#c7c7c7]  rounded px-4 py-3 h-12 w-full text-transform: capitalize" />
       </div>
       <div class="flex flex-col gap-3">
         <label class="text-[#c7c7c7] font-medium text-base" for="">Email</label>
-        <input type="text" class="bg-[#1A1A1A] rounded px-4 py-3 h-12 w-full" />
+        <input type="text" class="bg-[#1A1A1A] text-[#c7c7c7] rounded px-4 py-3 h-12 w-full text-transform: capitalize" />
       </div>
       <div class="flex flex-col gap-3">
         <label class="text-[#c7c7c7] font-medium text-base" for=""
           >Subject</label
         >
-        <input type="text" class="bg-[#1A1A1A] rounded px-4 py-3 h-12 w-full" />
+        <input type="text" class="bg-[#1A1A1A] text-[#c7c7c7] rounded px-4 py-3 h-12 w-full text-transform: capitalize" />
       </div>
       <div class="flex flex-col gap-3">
         <label class="text-[#c7c7c7] font-medium text-base" for=""
           >Message</label
         >
-        <textarea class="bg-[#1A1A1A] rounded px-4 py-3 h-40 w-full" />
+        <textarea class="bg-[#1A1A1A] text-[#c7c7c7] rounded px-4 py-3 h-40 w-full text-transform: capitalize" />
       </div>
       <button
         class="flex item center uppercase bg-[#D3E97A] px-10 py-5 rounded-full w-fit"

@@ -36,13 +36,13 @@ export const projects: ProjectProps[] = [
     src: projectImage2,
   },
   {
-    title: "Dispatch",
+    title: "Dishpatch",
     list: [
       "Developed APIs for browsing menus, customizing orders, tracking deliveries, managing payments, optimizing routing, and enabling referrals, reviews, and menu management.",
       "Built a comprehensive dashboard for managing restaurants, riders, customer support, metrics, reporting, and app configuration, streamlining coordination among customers, riders, and logistics partners",
     ],
-    client: "Dispatch",
-    link: "https://dispatch.ng",
+    client: "Dishpatch",
+    link: "https://dishpatch.ng",
     period: "December 2023 - Present",
     role: "Front-end & Back-end Developer",
     src: projectImage3,

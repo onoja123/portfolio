@@ -14,18 +14,21 @@ import GithubIcon from "./icon/GithubIcon.vue";
           OKPE ONOJA
         </h2>
         <p class="text-base lg:text-lg font-normal">
-          A full stack developer with 5+ years of experience in building
-          high-quality applications and backend systems, I specialize in
-          crafting intuitive UIs, scalable databases, and robust APIs.
+          Welcome to my corner of the web—where creativity meets code. 
+          Dive in to explore my journey as a developer, my projects, 
+          and my passion for crafting seamless digital experiences. 
+          Sit back, scroll, and enjoy the ride!
         </p>
       </div>
       <div class="flex items-center gap-3">
-        <button
+        <RouterLink
+          to="/contact"
           class="w-52 h-14 bg-[#D3E97A] rounded-full flex items-center justify-between pl-6 pr-2"
         >
           <span class="uppercase text-base font-bold">Contact Me</span>
-          <div class="bg-[#0A0A0A] w-3 h-3 rounded-full" />
-        </button>
+          <div class="bg-[#0A0A0A] w-3 h-3 rounded-full"></div>
+        </RouterLink>
+      </div>
         <div class="flex items-center gap-3 lg:hidden">
           <IconLink link="https://linkedin.com/in/okpe-onoja">
             <LinkedinIcon />
@@ -35,7 +38,6 @@ import GithubIcon from "./icon/GithubIcon.vue";
           </IconLink>
         </div>
       </div>
-    </div>
     <div class="mt-20 lg:mt-0">
       <img :src="memoji" />
     </div>
