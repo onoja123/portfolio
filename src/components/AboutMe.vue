@@ -17,37 +17,36 @@ defineProps<{
     </h1>
     <div class="max-w-3xl w-full flex flex-col gap-14">
       <div class="flex flex-col gap-3">
-        <h3 class="text-2xl lg:text-3xl font-medium">
-          I am a full stack developer based in Abuja. Has Computer Science
-          background.
-        </h3>
+
         <p
           v-if="!aboutRoute"
           class="text-[#C7C7C7] font-normal text-base lg:text-lg"
         >
-          I am a full stack developer with 5+ years of experience in building
-          high-quality applications and backend systems, I specialize in
-          crafting intuitive UIs, scalable databases, and robust APIs. I am
-          passionate about learning new technologies and continuously improving
-          my skills
+        I am a full stack developer with 5+ years of experience in building 
+          high-quality applications and backend systems. Specialises in intuitive 
+          UIs, scalable databases, and robust APIs. Passionate about learning new 
+          technologies and improving skills. Thrives in team environments, contributing 
+          technical expertise and problem-solving abilities to drive successful project outcomes.
+
         </p>
         <p v-else class="text-[#C7C7C7] font-normal text-base lg:text-lg">
-          I am a full stack developer with 5+ years of experience in building
-          high-quality applications and backend systems, I specialize in
-          crafting intuitive UIs, scalable databases, and robust APIs. I am
-          passionate about learning new technologies and continuously improving
-          my skills. I thrive in team environments, where I can contribute my
-          technical expertise and problem-solving abilities to drive successful
-          project outcomes. I am eager to bring my creativity and dedication to
-          drive positive results in any organization.
+          I am a full stack developer with 5+ years of experience in building 
+          high-quality applications and backend systems. Specialises in intuitive 
+          UIs, scalable databases, and robust APIs. Passionate about learning new 
+          technologies and improving skills. Thrives in team environments, contributing 
+          technical expertise and problem-solving abilities to drive successful project outcomes.
         </p>
       </div>
       <div v-if="aboutRoute" class="flex items-center gap-4">
-        <button class="bg-[#D3E97A] rounded-full h-14 lg:w-60 px-4 lg:px-0">
-          <span class="uppercase text-[#0A0A0A] font-bold text-sm lg:text-base"
-            >Download Resume</span
-          >
-        </button>
+        <a
+          href="../../public/Okpeonojagodwin_Resume.pdf"
+          download="Okpeonojagodwin_Resume.pdf"
+          class="bg-[#D3E97A] rounded-full h-14 lg:w-60 px-4 lg:px-0 flex items-center justify-center"
+        >
+          <span class="uppercase text-[#0A0A0A] font-bold text-sm lg:text-base">
+            Download Resume
+          </span>
+        </a>
         <IconLink link="https://linkedin.com/in/okpe-onoja">
           <LinkedinIcon />
         </IconLink>

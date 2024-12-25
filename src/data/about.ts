@@ -1,11 +1,11 @@
 export const capabilities = [
   {
     label: "Languages",
-    skills: ["Javascript", "Golang", "Python"],
+    skills: ["Javascript", "Typescript", "Golang", "Python"],
   },
   {
     label: "Frameworks",
-    skills: ["Nodejs", "React Native", "Typescript", "Fastify", "Express"],
+    skills: ["Nodejs", "NestJs", "React Native", "Fastify", "Express", "Gin"],
   },
   {
     label: "Tools",
@@ -41,7 +41,18 @@ export const capabilities = [
 
 export const experienceData = [
   {
-    position: "Backend Developer",
+    position: "Backend Engineer",
+    startDate: "September 2024",
+    endDate: "Present",
+    company: "FixmasterPos",
+    list: [
+      "Engineered v2 of the FixMaster POS API, significantly improving system performance and reliability.",
+      "Implemented enhancements to improve system reliability and speed.",
+      "Collaborated with cross-functional teams to ensure seamless integration of new features.",
+    ],
+  },
+  {
+    position: "Backend Engineer",
     startDate: "February 2023",
     endDate: "Present",
     company: "Turfind",
@@ -52,7 +63,7 @@ export const experienceData = [
     ],
   },
   {
-    position: "Backend Developer",
+    position: "Backend Engineer",
     startDate: "March 2024",
     endDate: "July 2024",
     company: "PocketLawyers",
@@ -64,7 +75,7 @@ export const experienceData = [
     ],
   },
   {
-    position: "Backend Developer",
+    position: "Backend Engineer",
     startDate: "June 2023",
     endDate: "September 2023",
     company: "RHIPFactory Healthcare Startup Studio",
@@ -74,14 +85,14 @@ export const experienceData = [
       "Engineered an analytics system for detailed insights and a donation system supporting health causes, with integrated hospital partnerships for community support",
     ],
   },
-  {
-    position: "Frontend Developer",
-    startDate: "August 2021",
-    endDate: "September 2022",
-    company: "ZeddPay",
-    list: [
-      "Collaborated with the CTO to gather and clarify project requirements.",
-      "Spearheaded the development of the company’s first web-based waitlist feature from conception to launch",
-    ],
-  },
+  // {
+  //   position: "Frontend Developer",
+  //   startDate: "August 2021",
+  //   endDate: "September 2022",
+  //   company: "ZeddPay",
+  //   list: [
+  //     "Collaborated with the CTO to gather and clarify project requirements.",
+  //     "Spearheaded the development of the company’s first web-based waitlist feature from conception to launch",
+  //   ],
+  // },
 ];
