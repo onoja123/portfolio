@@ -1,7 +1,5 @@
-<script setup>
-import AboutMe from "@/components/AboutMe.vue";
+<script setup lang="ts">
 import FeatureProjectList from "@/components/FeatureProjectList.vue";
-import Hero from "@/components/Hero.vue";
 import LetConnect from "@/components/LetConnect.vue";
 </script>
 
@@ -9,10 +7,7 @@ import LetConnect from "@/components/LetConnect.vue";
   <div
     class="max-2xl:max-w-screen-xl max-w-screen-2xl w-full mx-auto mt-20 flex flex-col gap-16 lg:px-10 xl:px-0 lg:gap-36"
   >
-    <Hero />
     <FeatureProjectList />
-    <AboutMe />
     <LetConnect />
   </div>
-  <!-- <main></main> -->
 </template>

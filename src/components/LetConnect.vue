@@ -1,12 +1,19 @@
 <script setup lang="ts">
 import { RouterLink } from "vue-router";
+import IconLink from "./IconLink.vue";
+import LinkedinIcon from "./icon/LinkedinIcon.vue";
+import GithubIcon from "./icon/GithubIcon.vue";
 </script>
 
 <template>
-  <section class="flex items-start justify-between h-full border-2">
-    <div class="flex flex-col h-full border justify-between gap-8">
+  <section
+    class="flex items-start px-4 lg:px-0 flex-col lg:flex-row justify-between h-full"
+  >
+    <div class="flex flex-col h-full justify-between gap-8">
       <div class="flex flex-col gap-3">
-        <h1 class="uppercase font-normal text-8xl">Let's Connect</h1>
+        <h1 class="uppercase font-normal text-4xl lg:text-3xl xl:text-7xl">
+          Let's Connect
+        </h1>
         <p>
           Say hello at
           <RouterLink
@@ -28,12 +35,22 @@ import { RouterLink } from "vue-router";
             >resume</RouterLink
           >
         </p>
+        <div class="flex items-center gap-3">
+          <IconLink link="https://linkedin.com/in/okpe-onoja">
+            <LinkedinIcon />
+          </IconLink>
+          <IconLink link="https://github.com/onoja123">
+            <GithubIcon />
+          </IconLink>
+        </div>
       </div>
-      <p class="text-[#c7c7c7] font-medium text-base">
+      <p class="text-[#c7c7c7] font-medium text-base hidden lg:flex">
         © 2024 Okpe Onoja Godwin
       </p>
     </div>
-    <div class="max-w-2xl w-full flex flex-col gap-6">
+    <div
+      class="max-w-3xl lg:max-w-xl xl:max-w-3xl w-full flex flex-col gap-6 mt-4 lg:mt-0"
+    >
       <div class="flex flex-col gap-3">
         <label class="text-[#c7c7c7] font-medium text-base" for="">Name</label>
         <input type="text" class="bg-[#1A1A1A] rounded px-4 py-3 h-12 w-full" />
@@ -59,6 +76,10 @@ import { RouterLink } from "vue-router";
       >
         Submit
       </button>
+
+      <p class="text-[#c7c7c7] font-medium text-base flex lg:hidden">
+        © 2024 Okpe Onoja Godwin
+      </p>
     </div>
   </section>
 </template>

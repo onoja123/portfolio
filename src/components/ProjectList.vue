@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ProjectProps } from "@/data/project";
+import { RouterLink } from "vue-router";
 
 defineProps<{
   project: ProjectProps;
@@ -7,9 +8,9 @@ defineProps<{
 </script>
 
 <template>
-  <div class="flex justify-between items-center gap-12">
+  <div class="flex flex-col lg:flex-row justify-between items-center gap-12">
     <div
-      class="max-w-2xl h-[576px] bg-[#1A1A1A] rounded-xl flex items-center justify-center w-full"
+      class="max-w-2xl h-96 lg:h-[576px] bg-[#1A1A1A] rounded-xl flex items-center justify-center w-full"
     >
       <img
         :src="project.src"
@@ -17,13 +18,13 @@ defineProps<{
       />
     </div>
     <div class="flex flex-col gap-4 max-w-2xl w-full">
-      <h2 class="text-4xl">{{ project.title }}</h2>
+      <h2 class="text-2xl lg:text-4xl">{{ project.title }}</h2>
       <ul>
         <li
           v-for="(list, index) in project.list"
           :key="index"
           :class="project.list.length > 0 ? 'list-disc list-inside' : null"
-          class="text-lg font-normal"
+          class="text-base lg:text-lg font-normal"
         >
           {{ list }}
         </li>
@@ -50,6 +51,12 @@ defineProps<{
           <p>{{ project.role }}</p>
         </div>
       </div>
+      <RouterLink
+        :to="project.link"
+        class="text-[#D3E97A] text-base w-fit lg:text-base font-bold uppercase border-b-2 border-b-[#D3E97A] pb-1 mt-5"
+      >
+        View live site
+      </RouterLink>
     </div>
   </div>
 </template>
