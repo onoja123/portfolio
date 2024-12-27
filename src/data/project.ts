@@ -30,7 +30,7 @@ export const projects: ProjectProps[] = [
       "Developed a mobile application for patients to provide medical data, schedule appointments, and receive health plans, and a tablet application for agents to onboard patients, create encounters, and manage patient records",
     ],
     client: "Kurenode",
-    link: "#",
+    link: "https://kurenode.com/",
     period: "July 2024 - Present",
     role: "Front-end Developer",
     src: projectImage2,

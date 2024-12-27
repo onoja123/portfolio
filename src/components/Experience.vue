@@ -22,7 +22,7 @@ import { experienceData } from "@/data/about";
             <h3 class="list-disc text-base lg:text-2xl font-medium">
               {{ list.position }}
             </h3>
-            <p class="list-disc text-xs lg:text-lg font-normal text-[#c7c7c7]">
+            <p class="list-disc text-xs lg:text-lg font-normal">
               {{ list.startDate }} - {{ list.endDate }}
             </p>
           </div>
@@ -32,7 +32,7 @@ import { experienceData } from "@/data/about";
         </div>
         <ul>
           <li
-            class="list-disc text-sm lg:text-lg font-normal text-[#c7c7c7]"
+            class="list-disc text-sm lg:text-lg font-normal"
             v-for="(data, idx) in list.list"
             :key="idx"
           >
