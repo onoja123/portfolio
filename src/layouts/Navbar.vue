@@ -4,6 +4,7 @@ import LinkedinIcon from "@/components/icon/LinkedinIcon.vue";
 import { navLink } from "@/data/nav";
 import { RouterLink } from "vue-router";
 import { ref } from "vue";
+import TwitterIcon from "@/components/icon/TwitterIcon.vue";
 
 const isMenuOpen = ref(false);
 </script>
@@ -38,18 +39,25 @@ const isMenuOpen = ref(false);
     <!-- Social Icons -->
     <div class="hidden lg:flex items-center gap-4">
       <RouterLink
-        to="https://linkedin.com"
+        to="https://linkedin.com/in/okpe-onoja"
         target="_blank"
         class="bg-[#222] w-14 h-14 rounded-full flex justify-center items-center"
       >
         <LinkedinIcon />
       </RouterLink>
       <RouterLink
-        to="https://github.com"
+        to="https://github.com/onoja123"
         target="_blank"
         class="bg-[#222] w-14 h-14 rounded-full flex justify-center items-center"
       >
         <GithubIcon />
+      </RouterLink>
+      <RouterLink
+        to="https://x.com/iam_the_code"
+        target="_blank"
+        class="bg-[#222] w-14 h-14 rounded-full flex justify-center items-center"
+      >
+        <TwitterIcon />
       </RouterLink>
     </div>
 

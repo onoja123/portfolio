@@ -11,15 +11,15 @@
           <h3 class="text-xl lg:text-2xl xl:text-3xl font-medium">
             VERITAS UNIVERSITY ABUJA
           </h3>
-          <p class="text-[#C7C7C7] font-normal text-base lg:text-lg">
+          <!-- <p class=" font-normal text-base lg:text-lg">
             February 2023 - Present
-          </p>
+          </p> -->
         </div>
         <p class="font-semibold text-lg text-[#D3E97A]">
           BSC. Computer Science
         </p>
       </div>
-      <li class="text-lg text-[#C7C7C7]">
+      <li class="text-lg ">
         <span class="font-bold">Coursework</span>: Software Engineering, Web
         Programming, Database Management, Digital Logic Design, Computer
         Architecture, Data Structures and Algorithms

@@ -51,12 +51,14 @@ defineProps<{
           <p>{{ project.role }}</p>
         </div>
       </div>
-      <RouterLink
-        :to="project.link"
+      <a
+        :href="project.link"
+        target="_blank"
+        rel="noopener noreferrer"
         class="text-[#D3E97A] text-base w-fit lg:text-base font-bold uppercase border-b-2 border-b-[#D3E97A] pb-1 mt-5"
       >
         View live site
-      </RouterLink>
+      </a>
     </div>
   </div>
 </template>
