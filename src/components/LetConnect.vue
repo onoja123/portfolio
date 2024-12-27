@@ -26,7 +26,7 @@ import TwitterIcon from "./icon/TwitterIcon.vue";
         <p>
           For more info, here’s my
           <a
-            href="../../public/Okpeonojagodwin_Resume.pdf"
+            href="/Okpeonojagodwin_Resume.pdf"
             download="Okpeonojagodwin_Resume.pdf"
             class="font-normal text-base border-b border-b-[#D3E97A]"
           >
