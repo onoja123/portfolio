@@ -3,6 +3,15 @@ import memoji from "@/assets/images/memoji.png";
 import IconLink from "./IconLink.vue";
 import LinkedinIcon from "./icon/LinkedinIcon.vue";
 import GithubIcon from "./icon/GithubIcon.vue";
+import { gsap } from "gsap";
+import { nextTick, onMounted } from "vue";
+onMounted(async () => {
+  await nextTick()
+
+  gsap.fromTo('.left-side', {opacity:0, x:-300, duration:1},{opacity:1, x:0, duration:1.4, delay:0.4})
+  gsap.fromTo('.right-side', {opacity:0, y:300, duration:1},{opacity:1, y:0, duration:1.4, delay:0.7})
+})
+
 </script>
 
 <template>
@@ -14,9 +23,9 @@ import GithubIcon from "./icon/GithubIcon.vue";
           OKPE ONOJA GODWIN
         </h2>
         <p class="text-base lg:text-lg font-normal">
-          Welcome to my corner of the web—where creativity meets code. 
-          Dive in to explore my journey as a developer, my projects, 
-          and my passion for crafting seamless digital experiences. 
+          Welcome to my corner of the web—where creativity meets code.
+          Dive in to explore my journey as a developer, my projects,
+          and my passion for crafting seamless digital experiences.
           Sit back, scroll, and enjoy the ride!
         </p>
       </div>
