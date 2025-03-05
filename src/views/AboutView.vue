@@ -4,6 +4,32 @@ import Capabilities from "@/components/Capabilities.vue";
 import Education from "@/components/Education.vue";
 import Experience from "@/components/Experience.vue";
 import LetConnect from "@/components/LetConnect.vue";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { nextTick, onMounted, ref } from "vue";
+
+gsap.registerPlugin(ScrollTrigger);
+
+const aboutMeRef = ref(null);
+
+onMounted(async () => {
+  await nextTick();
+
+  gsap.fromTo(
+    aboutMeRef.value,
+    { scale: 0, opacity:0, duration:1, delay:0.5 },
+    {
+      scale:1.5,
+      opacity: 1,
+      duration: 1.2,
+      delay:0.8,
+      ease: "power1.inOut",
+      onComplete: () => {
+        gsap.to(aboutMeRef.value, { scale: 1, opacity:1,duration:1.1});
+      },
+    }
+  );
+});
 </script>
 
 <template>

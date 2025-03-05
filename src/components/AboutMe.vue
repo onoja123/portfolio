@@ -23,18 +23,18 @@ defineProps<{
           v-if="!aboutRoute"
           class="font-normal text-base lg:text-lg"
         >
-        I am a full stack developer with 5+ years of experience in building 
-          high-quality applications and backend systems. Specialises in intuitive 
-          UIs, scalable databases, and robust APIs. Passionate about learning new 
-          technologies and improving skills. Thrives in team environments, contributing 
+        I am a full stack developer with 5+ years of experience in building
+          high-quality applications and backend systems. Specialises in intuitive
+          UIs, scalable databases, and robust APIs. Passionate about learning new
+          technologies and improving skills. Thrives in team environments, contributing
           technical expertise and problem-solving abilities to drive successful project outcomes.
 
         </p>
         <p v-else class="font-normal text-base lg:text-lg">
-          I am a full stack developer with 5+ years of experience in building 
-          high-quality applications and backend systems. Specialises in intuitive 
-          UIs, scalable databases, and robust APIs. Passionate about learning new 
-          technologies and improving skills. Thrives in team environments, contributing 
+          I am a full stack developer with 5+ years of experience in building
+          high-quality applications and backend systems. Specialises in intuitive
+          UIs, scalable databases, and robust APIs. Passionate about learning new
+          technologies and improving skills. Thrives in team environments, contributing
           technical expertise and problem-solving abilities to drive successful project outcomes.
         </p>
       </div>
@@ -48,15 +48,7 @@ defineProps<{
             Download Resume
           </span>
         </a>
-        <!-- <IconLink link="https://linkedin.com/in/okpe-onoja">
-          <LinkedinIcon />
-        </IconLink>
-        <IconLink link="https://github.com/onoja123">
-          <GithubIcon />
-        </IconLink>
-        <IconLink link="https://x.com/iam_the_code">
-            <TwitterIcon />
-        </IconLink> -->
+
       </div>
       <RouterLink
         v-else
