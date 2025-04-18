@@ -38,27 +38,27 @@ const isMenuOpen = ref(false);
 
     <!-- Social Icons -->
     <div class="hidden lg:flex items-center gap-4">
-      <RouterLink
-        to="https://linkedin.com/in/okpe-onoja"
+      <a
+        href="https://linkedin.com/in/okpe-onoja"
         target="_blank"
         class="bg-[#222] w-14 h-14 rounded-full flex justify-center items-center"
       >
         <LinkedinIcon />
-      </RouterLink>
-      <RouterLink
-        to="https://github.com/onoja123"
+      </a>
+      <a
+        href="https://github.com/onoja123"
         target="_blank"
         class="bg-[#222] w-14 h-14 rounded-full flex justify-center items-center"
       >
         <GithubIcon />
-      </RouterLink>
-      <RouterLink
-        to="https://x.com/iam_the_code"
+      </a>
+      <a
+        href="https://x.com/iam_the_code"
         target="_blank"
         class="bg-[#222] w-14 h-14 rounded-full flex justify-center items-center"
       >
         <TwitterIcon />
-      </RouterLink>
+      </a>
     </div>
 
     <!-- Mobile Menu Button -->
@@ -100,20 +100,20 @@ const isMenuOpen = ref(false);
         </li>
       </ul>
       <div class="flex items-center gap-4 mt-4">
-        <RouterLink
-          to="https://linkedin.com"
+        <a
+        href="https://linkedin.com"
           target="_blank"
           class="bg-[#222] w-12 h-12 rounded-full flex justify-center items-center"
         >
           <LinkedinIcon />
-        </RouterLink>
-        <RouterLink
-          to="https://github.com"
+        </a>
+        <a
+        href="https://github.com"
           target="_blank"
           class="bg-[#222] w-12 h-12 rounded-full flex justify-center items-center"
         >
           <GithubIcon />
-        </RouterLink>
+        </a>
       </div>
     </div>
   </nav>
