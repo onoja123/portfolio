@@ -1,12 +1,11 @@
 <script setup lang="ts">
-import { RouterLink } from "vue-router";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { nextTick, onMounted, ref } from "vue";
 import IconLink from "./IconLink.vue";
 import GithubIcon from "./icon/GithubIcon.vue";
 import LinkedinIcon from "./icon/LinkedinIcon.vue";
 import TwitterIcon from "./icon/TwitterIcon.vue";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { nextTick, onMounted, ref } from "vue";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -87,10 +86,10 @@ onMounted(async () => {
             class="font-normal text-base border-b border-b-[#D3E97A]"
             >okpeonoja18@gmail.com</a
           ><br />
-          <RouterLink
-            to="#"
+          <a
+            href="#"
             class="font-normal text-base border-b border-b-[#D3E97A]"
-            >+2348109942162</RouterLink
+            >+2348109942162</a
           >
         </p>
         <p>
@@ -104,15 +103,27 @@ onMounted(async () => {
           </a>
         </p>
         <div class="flex items-center gap-3">
-          <IconLink link="https://linkedin.com/in/okpe-onoja">
+          <a
+            href="https://linkedin.com/in/okpe-onoja"
+            target="_blank"
+            class="bg-[#222] w-14 h-14 rounded-full flex justify-center items-center"
+          >
             <LinkedinIcon />
-          </IconLink>
-          <IconLink link="https://github.com/onoja123">
+          </a>
+          <a
+            href="https://github.com/onoja123"
+            target="_blank"
+            class="bg-[#222] w-14 h-14 rounded-full flex justify-center items-center"
+          >
             <GithubIcon />
-          </IconLink>
-          <IconLink link="https://x.com/iam_the_code">
+          </a>
+          <a
+            href="https://x.com/iam_the_code"
+            target="_blank"
+            class="bg-[#222] w-14 h-14 rounded-full flex justify-center items-center"
+          >
             <TwitterIcon />
-          </IconLink>
+          </a>
         </div>
       </div>
       <p class="text-[#c7c7c7] font-medium text-base hidden lg:flex">
